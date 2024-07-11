@@ -8,11 +8,36 @@ datasource db {
 }
 
 model User {
-  id String @id @unique
-  email String
-  firstName String
-  lastName String
+  id           String @id @unique
+  email        String
+  firstName    String
+  lastName     String
   profileImage String
-  
+
+  createdAt DateTime @default(now())
+}
+
+enum ProductStatus {
+  draft
+  published
+  archived
+}
+
+enum Category {
+  men
+  women
+  kids
+}
+
+model Product {
+  id          String        @id @default(uuid())
+  name        String
+  description String
+  status      ProductStatus
+  price       Float
+  images      String[]
+  category    Category
+  isFeatured  Boolean       @default(false)
+
   createdAt DateTime @default(now())
 }
