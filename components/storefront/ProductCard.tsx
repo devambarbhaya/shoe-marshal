@@ -21,6 +21,7 @@ interface ProductCardProps {
 
 export function ProductCard({ item }: ProductCardProps) {
   return (
+    // TODO: To add maybe mb-20
     <div className="rounded-lg mb-20">
       <Carousel className="w-full mx-auto">
         <CarouselContent>
