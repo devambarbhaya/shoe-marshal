@@ -1,5 +1,7 @@
+import { addItem } from "@/app/actions";
 import { FeaturedProducts } from "@/components/storefront/FeaturedProducts";
 import { ImageSlider } from "@/components/storefront/ImageSlider";
+import { ShoppingBagButton } from "@/components/SubmitButtons";
 import { Button } from "@/components/ui/button";
 import prisma from "@/lib/db";
 import { ShoppingBag, Star } from "lucide-react";
@@ -32,6 +34,7 @@ export default async function ProductIdPage({
   params: { id: string };
 }) {
   const data = await getData(params.id);
+  const addProductToShoppingCart = addItem.bind(null, data.id);
 
   return (
     <>
@@ -50,10 +53,9 @@ export default async function ProductIdPage({
             <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
           </div>
           <p className="text-base text-gray-700 mt-6">{data.description}</p>
-          <Button size="lg" className="w-full mt-5">
-            <ShoppingBag className="h-5 w-5 mr-4" />
-            Add to Cart
-          </Button>
+          <form action={addProductToShoppingCart}>
+            <ShoppingBagButton />
+          </form>
         </div>
       </div>
       <div className="mt-16">
