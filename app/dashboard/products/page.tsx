@@ -66,6 +66,7 @@ export default async function ProductsPage() {
                 <TableHead>Status</TableHead>
                 <TableHead>Price</TableHead>
                 <TableHead>Date</TableHead>
+                <TableHead>Category</TableHead>
                 <TableHead className="text-right">Actions</TableHead>
               </TableRow>
             </TableHeader>
@@ -87,6 +88,7 @@ export default async function ProductsPage() {
                   <TableCell>
                     {new Intl.DateTimeFormat("en-GB").format(item.createdAt)}
                   </TableCell>
+                  <TableCell>{item.category}</TableCell>
                   <TableCell className="text-right">
                     <DropdownMenu>
                       <DropdownMenuTrigger asChild>

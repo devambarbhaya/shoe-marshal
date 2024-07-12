@@ -22,7 +22,7 @@ interface ProductCardProps {
 export function ProductCard({ item }: ProductCardProps) {
   return (
     // TODO: To add maybe mb-20
-    <div className="rounded-lg mb-20">
+    <div className="rounded-lg">
       <Carousel className="w-full mx-auto">
         <CarouselContent>
           {item.images.map((item, index) => (
