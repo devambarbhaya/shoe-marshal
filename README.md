@@ -2,14 +2,11 @@
 
 
 
-🌟 Hey Everyone, Welcome back to the Channel. Today we are going to build an E-Commerce Store which has an admin dashboard and a storefront. To build/create this whole video we will use the newest tech on the market which means: Next.js, Kinde-Auth, Neon, Prisma, Stripe, Tailwindcss, Shadcn/UI, Vercel, Upstash and much more. This is a Full Stack tutorial, which means we will build everything from start to finish!
+🌟 Hey Everyone, today we are going to build an E-Commerce Store which has an admin dashboard and a storefront. To build/create this we will use the newest tech on the market: Next.js, Kinde-Auth, Neon, Prisma, Stripe, Tailwindcss, Shadcn/UI, Vercel, Upstash and much more. 
 
-### 🚀 Kinde Auth: https://dub.sh/xeU8r3v
-
-- 👨🏻‍💻 GitHub Repository: https://janmarshal.com/courses/build-an-e-commerce-store-using-next-js-kinde-auth-neon-upstache-prisma-stripe-and-tailwind
-- 🌍 My Website: https://www.janmarshal.com
-- ✅ Follow me on X: https://x.com/janmarshaldev
-- 📧 Business ONLY: jan@alenix.de 
+- 👨🏻‍💻 GitHub Repository: https://github.com/devambarbhaya/shoe-marshal/
+- 🌍 My Website: https://shoe-marshal-devam.vercel.app/
+- 📧 Business ONLY: barbhaya.devam@gmail.com 
 
 
 Features: 
@@ -26,11 +23,11 @@ Features:
 - ✅ Server Validation using Zod and Conform
 - 🗂️ File Upload with Uploadthing
 - 🎨 Styling with Tailwindcss and Shadcn UI
-- 😶‍🌫️ Deployment to vercel
+- 😶‍🌫️ Deployment to Vercel
 
 - React Streaming
 - Stripe Checkout page
-- Server side implementation 
+- Server-side implementation 
 - Performance Optimized
 
 
